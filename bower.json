@@ -1,0 +1,13 @@
+{
+  "name": "120WaterAudit init",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "backbone": "latest",
+    "underscore": "latest",
+    "requirejs": "^2.3.2",
+    "backbone.marionette": "marionette#^3.1.0",
+    "backbone.babysitter": "^0.1.12",
+    "bootstrap": "^3.3.7"
+  }
+}

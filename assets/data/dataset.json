@@ -1,0 +1,38 @@
+[
+  {
+    "test_id": 1,
+    "street_address": "6052 Wildcat Dr.",
+    "city": "Indianapolis",
+    "state": "IN",
+    "zip": "46203",
+    "decade_built": "90s",
+    "test_1_date": "2/10/2015",
+    "test_1_status": "Completed",
+    "test_1_results": "131",
+    "test_1_action_needed": true,
+    "test_2_date": "7/7/2016",
+    "test_2_status": "Completed",
+    "test_2_results": "124.45",
+    "test_2_action_needed": true,
+    "latitude": "39.722403",
+    "longitude": "-86.062414"
+  },
+  {
+    "test_id": 2,
+    "street_address": "3621 Katelyn Ct.",
+    "city": "Indianapolis",
+    "state": "IN",
+    "zip": "46228",
+    "decade_built": "90s",
+    "test_1_date": "7/11/2015",
+    "test_1_status": "Completed",
+    "test_1_results": "<1",
+    "test_1_action_needed": true,
+    "test_2_date": null,
+    "test_2_status": "",
+    "test_2_results": "",
+    "test_2_action_needed": false,
+    "latitude": "39.845659",
+    "longitude": "-86.222333"
+  }
+]

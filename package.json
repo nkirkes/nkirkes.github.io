@@ -1,0 +1,19 @@
+{
+  "name": "120-water-audit",
+  "version": "0.0.1",
+  "description": "120WaterAudit Prototype",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkirkes/120WaterAudit.git"
+  },
+  "author": "nkirkes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkirkes/120WaterAudit/issues"
+  },
+  "homepage": "https://github.com/nkirkes/120WaterAudit#readme"
+}

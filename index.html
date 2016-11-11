@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>120WaterAudit &middot; Map</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link href="assets/css/toolkit-light.css" rel="stylesheet">
+    <link href="assets/css/application.css" rel="stylesheet">
+    <link href="assets/css/map.css" rel="stylesheet">
+
+  </head>
+<body class="with-top-navbar">
+  <nav class="navbar navbar navbar-fixed-top" style="background-color: #fff;">
+    <div class="container-fluid container-fluid-spacious">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbar-brand-emphasized" href="../index.html">
+          <span class="icon icon-drop navbar-brand-icon"></span>
+          120WaterAudit
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="index.html">Map</a>
+          </li>
+          <li>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+        <form class="form-inline navbar-form navbar-right">
+          <div class="input-with-icon">
+            <input class="form-control" type="text" placeholder="Search...">
+            <span class="icon icon-magnifying-glass"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid container-fluid-spacious">
+    <div class="dashhead m-t-md">
+      <div class="dashhead-titles">
+        <h6 class="dashhead-subtitle">Maps</h6>
+        <h2 class="dashhead-title">Test by Address (Lat/Long)</h2>
+      </div>
+
+      <div class="btn-toolbar dashhead-toolbar">
+        <div class="btn-toolbar-item input-with-icon">
+          <input type="text" value="01/01/15 - 01/08/15" class="form-control" data-provide="datepicker">
+          <span class="icon icon-calendar"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+
+      <div id="map" style="background-color: black; height: 100%; width: 95%;position: absolute; overflow: hidden;"></div>
+
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/tablesorter.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+
+    <script src="assets/js/application.js"></script>
+    <script src="app/views/eventListView.js"></script>
+    <script src="app/views/eventMarkerView.js"></script>
+    <script src="app/models/eventItem.js"></script>
+    <script src="app/collections/eventList.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGBtm6wflxAawpfGL4SvZPya0lL8JYpvs"></script>
+
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+    <script>
+        window.onload = function() {
+            app.init();
+        }
+    </script>
+  </body>
+</html>
