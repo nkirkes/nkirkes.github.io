@@ -53,8 +53,8 @@
     "test_2_results": "",
     "test_2_action_needed": false,
     "address_status": "Uncontaminated",
-    "latitude": "39.845659",
-    "longitude": "-86.222333"
+    "latitude": "39.876241",
+    "longitude": "-86.208837"
   },
   {
     "test_id": 4,
@@ -72,8 +72,8 @@
     "test_2_results": "",
     "test_2_action_needed": false,
     "address_status": "Unsubmitted",
-    "latitude": "39.845659",
-    "longitude": "-86.222333"
+    "latitude": "39.864475",
+    "longitude": "-86.184544"
   }
 
 ]
