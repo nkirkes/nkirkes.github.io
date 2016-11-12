@@ -14,6 +14,7 @@
     "test_2_status": "Completed",
     "test_2_results": "124.45",
     "test_2_action_needed": true,
+    "address_status": "Requested",
     "latitude": "39.722403",
     "longitude": "-86.062414"
   },
@@ -32,7 +33,47 @@
     "test_2_status": "",
     "test_2_results": "",
     "test_2_action_needed": false,
+    "address_status": "Contaminated",
+    "latitude": "39.845659",
+    "longitude": "-86.222333"
+  },
+  {
+    "test_id": 3,
+    "street_address": "6602 Hazelhatch Dr.",
+    "city": "Indianapolis",
+    "state": "IN",
+    "zip": "46268",
+    "decade_built": "90s",
+    "test_1_date": "7/23/2015",
+    "test_1_status": "Completed",
+    "test_1_results": "<1",
+    "test_1_action_needed": false,
+    "test_2_date": null,
+    "test_2_status": "",
+    "test_2_results": "",
+    "test_2_action_needed": false,
+    "address_status": "Uncontaminated",
+    "latitude": "39.845659",
+    "longitude": "-86.222333"
+  },
+  {
+    "test_id": 4,
+    "street_address": "1420 Royal Lake Dr.",
+    "city": "Indianapolis",
+    "state": "IN",
+    "zip": "46228",
+    "decade_built": "90s",
+    "test_1_date": "5/23/2015",
+    "test_1_status": "Completed",
+    "test_1_results": "2.93",
+    "test_1_action_needed": false,
+    "test_2_date": null,
+    "test_2_status": "",
+    "test_2_results": "",
+    "test_2_action_needed": false,
+    "address_status": "Unsubmitted",
     "latitude": "39.845659",
     "longitude": "-86.222333"
   }
+
 ]

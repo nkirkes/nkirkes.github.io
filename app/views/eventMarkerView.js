@@ -1,15 +1,43 @@
 app.views.eventMarkerView = Backbone.View.extend({
 		initialize: function(options) {
 			this.map = options.map;
+
+			// create the markers
+			var icon = "";
+      switch (this.model.attributes.address_status) {
+          case "Requested":
+              icon = "blue";
+              break;
+          case "Contaminated":
+              icon = "red";
+              break;
+          case "Unsubmitted":
+              icon = "yellow";
+              break;
+          case "Uncontaminated":
+              icon = "green";
+              break;
+      }
+			var icon_path = "../assets/img/marker-" + icon + ".png";
 			this.marker = new google.maps.Marker({
 		        map: this.map,
 		        position: new google.maps.LatLng(this.model.attributes.latitude, this.model.attributes.longitude),
-		        title: this.model.attributes.street_address,
-
-		        id : this.model.attributes.id
-		        //startDate: this.formatDate(this.model.attributes.startDate),
-		        //category: this.model.attributes.category,
-		        //subcategory: this.model.attributes.subcategory
+		        address: this.model.attributes.street_address,
+		        id : this.model.attributes.id,
+						icon : icon_path,
+						address_status: this.model.attributes.address_status,
+						city: this.model.attributes.city,
+						state: this.model.attributes.state,
+						zip: this.model.attributes.zip,
+						decade_built: this.model.attributes.decade_built,
+						test_1_date: this.formatDate(this.model.attributes.test_1_date),
+						test_1_status: this.model.attributes.test_1_status,
+						test_1_results: this.model.attributes.test_1_results,
+						test_1_action_needed: this.model.attributes.test_1_action_needed,
+						test_2_date: this.formatDate(this.model.attributes.test_2_date),
+						test_2_status: this.model.attributes.test_2_status,
+						test_2_results: this.model.attributes.test_2_results,
+						test_2_action_needed: this.model.attributes.test_2_action_needed
 		    });
 
 			// hook the infoWindow description
@@ -23,20 +51,16 @@ app.views.eventMarkerView = Backbone.View.extend({
 
     showEventDetails: function() {
     	var infoContent = '<div id="content">' +
-			'<h1>' + this.title + '</h1>' +
-			'<div>' + this.descr + '</div>' +
-			'<div>Start Date: ' + this.startDate + '</div>' +
-			'<div>Category: ' + this.category + '</div>';
+			'<h1>' + this.address_status + '</h1>' +
+			'<div>' + this.address + '<br/>' + this.city + ', ' + this.state + '' + this.zip + '</div>';
+			//'<div>Start Date: ' + this.startDate + '</div>' +
+			//'<div>Category: ' + this.category + '</div>';
 
-		if (this.subcategory !== null) {
-			infoContent += '<div>Subcategory: ' + this.subcategory + '</div>';
-		}
+			infoContent += '</div>';
 
-		infoContent += '</div>';
+			this.infoWindow.setContent(infoContent);
 
-		this.infoWindow.setContent(infoContent);
-
-		this.infoWindow.open(this.map, this);
+			this.infoWindow.open(this.map, this);
     },
 
     formatDate: function(dateString) {

@@ -37,9 +37,6 @@
           <li class="active">
             <a href="dashboard.html">Dashboards</a>
           </li>
-          <li>
-            <a href="index-dark.html">Dark</a>
-          </li>
         </ul>
         <form class="form-inline navbar-form navbar-right">
           <div class="input-with-icon">
@@ -70,143 +67,47 @@
     <div class="hr-divider m-t m-b-md">
       <h3 class="hr-divider-content hr-divider-heading">Quick stats</h3>
     </div>
-    <div class="row statcards">
-      <div class="col-sm-6 col-md-3 m-b">
-        <div class="statcard">
-          <div class="p-a">
-            <span class="statcard-desc">Page views</span>
-            <h2 class="statcard-number">
-              12,938
-              <small class="label label-success">5%</small>
-            </h2>
-          </div>
-          <canvas id="sparkline1" width="378" height="94" class="sparkline" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[28,68,41,43,96,45,100]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3 m-b">
-        <div class="statcard">
-          <div class="p-a">
-            <span class="statcard-desc">Downloads</span>
-            <h2 class="statcard-number">
-              758
-              <small class="label label-danger">1.3%</small>
-            </h2>
-          </div>
-          <canvas id="sparkline1" width="378" height="94" class="sparkline" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[4,34,64,27,96,50,80]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3 m-b">
-        <div class="statcard">
-          <div class="p-a">
-            <span class="statcard-desc">Sign-ups</span>
-            <h2 class="statcard-number">
-              1,293
-              <small class="label label-success">6.75%</small>
-            </h2>
-          </div>
-          <canvas id="sparkline1" width="378" height="94" class="sparkline" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[12,38,32,60,36,54,68]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3 m-b">
-        <div class="statcard">
-          <div class="p-a">
-            <span class="statcard-desc">Downloads</span>
-            <h2 class="statcard-number">
-              758
-              <small class="label label-success">1.3%</small>
-            </h2>
-          </div>
-          <canvas id="sparkline1" width="378" height="94" class="sparkline" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[43,48,52,58,50,95,100]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
-        </div>
-      </div>
-    </div>
 
-    <div class="hr-divider m-y-md">
-      <ul class="nav nav-pills hr-divider-content hr-divider-nav" role="tablist">
-        <li class="active" role="presentation">
-          <a href="#sales" role="tab" data-toggle="tab" aria-controls="sales">Sales</a>
-        </li>
-        <li role="presentation">
-          <a href="#inventory" role="tab" data-toggle="tab" aria-controls="inventory">Inventory</a>
-        </li>
-        <li role="presentation">
-          <a href="#profit" role="tab" data-toggle="tab" aria-controls="profit">Profit</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane" id="sales">
-        <div class="ex-line-graphs">
-           <canvas
-            class="ex-line-graph"
-            width="600" height="400"
-            data-chart="line"
-            data-scale-line-color="transparent"
-            data-scale-grid-line-color="rgba(255,255,255,.05)"
-            data-scale-font-color="#a2a2a2"
-            data-labels="['','Aug 29','','','Sept 5','','','Sept 12','','','Sept 19','']"
-            data-value="[{fillColor: 'rgba(28,168,221,.03)', data: [2500, 3300, 2512, 2775, 2498, 3512, 2925, 4275, 3507, 3825, 3445, 3985]}]">
-          </canvas>
-        </div>
-      </div>
-
-      <div role="tabpanel" class="tab-pane active" id="inventory">
-        <div class="ex-line-graphs">
+    <div class="row ex-graphs text-center">
+      <div class="col-sm-4">
+        <h3>Tests Returned vs. Goal</h3>
+        <strong class="text-muted">The total number of tests that are in the mail stream <br /> measured against our goal of
+        100 test returns.</strong>
+        <div class="c-w-lg m-x-auto" style="margin-top: 10px;">
           <canvas
-            class="ex-line-graph"
-            width="600" height="400"
-            data-chart="bar"
-            data-scale-line-color="transparent"
-            data-scale-grid-line-color="rgba(255,255,255,.05)"
-            data-scale-font-color="#a2a2a2"
-            data-labels="['August','September','October','November','December','January','February']"
-            data-value="[{ label: 'First dataset', data: [65, 59, 80, 81, 56, 55, 40] }, { label: 'Second dataset', data: [28, 48, 40, 19, 86, 27, 90] }]">
+            class="ex-graph"
+            width="200" height="200"
+            data-chart="doughnut"
+            data-segment-stroke-color="#222"
+            data-value="[{ value: 77, color: '#06379D', label: 'Outstanding' }, { value: 23, color: '#1EB6E0', label: 'Returned' }]">
+          </canvas>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <h3>Tests Received at Lab</h3>
+        <strong class="text-muted">The total number of tests that have been received at ALS <br /> for testing measured against our goal of 100 test returns.</strong>
+        <div class="c-w-lg m-x-auto" style="margin-top: 10px;">
+          <canvas
+            class="ex-graph"
+            width="200" height="200"
+            data-chart="doughnut"
+            data-segment-stroke-color="#222"
+            data-value="[{ value: 100, color: '#06379D', label: 'Outstanding Tests' }, { value: 0, color: '#1EB6E0', label: 'Tests at ALS' }]">
           </canvas>
         </div>
       </div>
-
-      <div role="tabpanel" class="tab-pane" id="profit">
-        <div class="row ex-graphs text-center">
-          <div class="col-sm-4">
-            <div class="c-w-lg m-x-auto">
-              <canvas
-                class="ex-graph"
-                width="200" height="200"
-                data-chart="doughnut"
-                data-segment-stroke-color="#222"
-                data-value="[{ value: 230, color: '#1ca8dd', label: 'Returning' }, { value: 130, color: '#1bc98e', label: 'New' }]">
-              </canvas>
-            </div>
-            <strong class="text-muted">Traffic</strong>
-            <h3>New vs Returning</h3>
-          </div>
-          <div class="col-sm-4">
-            <div class="c-w-lg m-x-auto">
-              <canvas
-                class="ex-graph"
-                width="200" height="200"
-                data-chart="doughnut"
-                data-segment-stroke-color="#222"
-                data-value="[{ value: 330, color: '#1ca8dd', label: 'Recurring' }, { value: 30, color: '#1bc98e', label: 'New' }]">
-              </canvas>
-            </div>
-            <strong class="text-muted">Revenue</strong>
-            <h3>New vs Recurring</h3>
-          </div>
-          <div class="col-sm-4">
-            <div class="c-w-lg m-x-auto">
-              <canvas
-                class="ex-graph"
-                width="200" height="200"
-                data-chart="doughnut"
-                data-segment-stroke-color="#222"
-                data-value="[{ value: 100, color: '#42a5f5', label: 'Referrals' }, { value: 260, color: '#1bc98e', label: 'Direct' }]">
-              </canvas>
-            </div>
-            <strong class="text-muted">Traffic</strong>
-            <h3>Direct vs Referrals</h3>
-          </div>
+      <div class="col-sm-4">
+        <h3>Tests Returned vs. Total Sent</h3>
+        <strong class="text-muted">The total number of tests that have been returned <br /> measured against the total number of tests sent.</strong>
+        <div class="c-w-lg m-x-auto" style="margin-top: 10px;">
+          <canvas
+            class="ex-graph"
+            width="200" height="200"
+            data-chart="doughnut"
+            data-segment-stroke-color="#222"
+            data-value="[{ value: 180, color: '#06379D', label: 'Total Outstanding Tests' }, { value: 23, color: '#1EB6E0', label: 'Tests Returned' }]">
+          </canvas>
         </div>
       </div>
     </div>
@@ -215,196 +116,30 @@
       <h3 class="hr-divider-content hr-divider-heading">Other</h3>
     </div>
 
-    <div class="row">
-      <div class="col-md-4 m-b">
-        <div class="list-group">
-          <h4 class="list-group-header">
-            Countries
-          </h4>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 62.4%;"></span>
-              <span class="pull-right text-muted">62.4%</span>
-              United States
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 15.0%;"></span>
-              <span class="pull-right text-muted">15.0%</span>
-              India
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 5.0%;"></span>
-              <span class="pull-right text-muted">5.0%</span>
-              United Kingdom
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 5.0%;"></span>
-              <span class="pull-right text-muted">5.0%</span>
-              Canada
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 4.5%;"></span>
-              <span class="pull-right text-muted">4.5%</span>
-              Russia
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 2.3%;"></span>
-              <span class="pull-right text-muted">2.3%</span>
-              Mexico
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 1.7%;"></span>
-              <span class="pull-right text-muted">1.7%</span>
-              Spain
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 1.5%;"></span>
-              <span class="pull-right text-muted">1.5%</span>
-              France
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 1.4%;"></span>
-              <span class="pull-right text-muted">1.4%</span>
-              South Africa
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="list-group-progress" style="width: 1.2%;"></span>
-              <span class="pull-right text-muted">1.2%</span>
-              Japan
-            </a>
-
-        </div>
-        <a href="#" class="btn btn-primary-outline">All countries</a>
+    <div class="row ex-graphs text-center">
+      <h3>Customer Support Requests</h3>
+      <strong class="text-muted">The total number of customer support requests by type per week.</div>
+      <div class="ex-line-graphs">
+        <canvas
+          class="ex-line-graph"
+          width="600" height="400"
+          data-chart="bar"
+          data-scale-line-color="transparent"
+          data-scale-grid-line-color="rgba(30, 182, 224, 1.00)"
+          data-scale-font-color="#a2a2a2"
+          data-labels="['Courier Requests','Collection Requests','Support Emails','Support Calls']"
+          data-value="[{ label: 'First dataset', data: [0, 0, 0, 8] }]">
+        </canvas>
       </div>
-      <div class="col-md-4 m-b">
-        <div class="list-group">
-          <h4 class="list-group-header">
-            Most visited pages
-          </h4>
+    </div>
 
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">3,929,481</span>
-              / (Logged out)
-            </a>
+    <div class="hr-divider m-t m-b-md">
+      <h3 class="hr-divider-content hr-divider-heading">Info</h3>
+    </div>
+    <div class="m-t-md" style="text-align: center">
+      <a href="mailto:support@120WaterAudit.com">support@120WaterAudit.com</a> | 888.317.1510 | <a href="www.120WaterAudit.com" target="_blank">www.120WaterAudit.com</a>
+    </div>
 
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">1,143,393</span>
-              / (Logged in)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">938,287</span>
-              /tour
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">749,393</span>
-              /features/something
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">695,912</span>
-              /features/another-thing
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">501,938</span>
-              /users/username
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">392,842</span>
-              /page-title
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">298,183</span>
-              /some/page-slug
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">193,129</span>
-              /another/directory/and/page-title
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">93,382</span>
-              /one-more/page/directory/file-name
-            </a>
-
-        </div>
-        <a href="#" class="btn btn-primary-outline">View all pages</a>
-      </div>
-      <div class="col-md-4 m-b">
-        <div class="list-group">
-          <h4 class="list-group-header">
-            Devices and resolutions
-          </h4>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">3,929,481</span>
-              Desktop (1920x1080)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">1,143,393</span>
-              Desktop (1366x768)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">938,287</span>
-              Desktop (1440x900)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">749,393</span>
-              Desktop (1280x800)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">695,912</span>
-              Tablet (1024x768)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">501,938</span>
-              Tablet (768x1024)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">392,842</span>
-              Phone (320x480)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">298,183</span>
-              Phone (720x450)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">193,129</span>
-              Desktop (2560x1080)
-            </a>
-
-            <a class="list-group-item" href="#">
-              <span class="pull-right text-muted">93,382</span>
-              Desktop (2560x1600)
-            </a>
-
-        </div>
-        <a href="#" class="btn btn-primary-outline">View all devices</a>
-      </div>
-
-  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
