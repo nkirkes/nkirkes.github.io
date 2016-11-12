@@ -4164,7 +4164,7 @@ $(function () {
         animation: false,
         segmentStrokeColor: '#fff',
         segmentStrokeWidth: 2,
-        percentageInnerCutout: 80,
+        percentageInnerCutout: 50,
       }, attrData)
 
       new Chart(element.getContext('2d')).Doughnut(data, options)
@@ -4177,7 +4177,7 @@ $(function () {
         labels   : eval(attrData.labels),
         datasets : eval(attrData.value).map(function (set, index) {
           return $.extend({
-            fillColor   : (index % 2 ? '#42a5f5' : '#1bc98e'),
+            fillColor   : "#1EB6E0",//(index % 2 ? '#42a5f5' : '#1bc98e'),
             strokeColor : 'transparent'
           }, set)
         })
@@ -4190,8 +4190,8 @@ $(function () {
         animation: false,
         scaleShowVerticalLines: false,
         scaleOverride: true,
-        scaleSteps: 4,
-        scaleStepWidth: 25,
+        scaleSteps: 5,
+        scaleStepWidth: 5,
         scaleStartValue: 0,
         barValueSpacing: 10,
         scaleFontColor: 'rgba(0,0,0,.4)',

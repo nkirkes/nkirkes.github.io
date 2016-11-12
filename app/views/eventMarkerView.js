@@ -51,8 +51,20 @@ app.views.eventMarkerView = Backbone.View.extend({
 
     showEventDetails: function() {
     	var infoContent = '<div id="content">' +
-			'<h1>' + this.address_status + '</h1>' +
-			'<div>' + this.address + '<br/>' + this.city + ', ' + this.state + '' + this.zip + '</div>';
+			'<h3>' + this.address_status + '</h3>' +
+			'<div><strong>' + this.address + '</strong><br/>' + this.city + ', ' + this.state + '' + this.zip + '</div>' +
+			'<div>Decade Built: ' + this.decade_built + '</div>' +
+			'<h4 style="margin-top: 10px;">Test 1</h4>' +
+			'<div>Date: ' + this.test_1_date + '</div>' +
+			'<div>Status: ' + this.test_1_status + '</div>' +
+			'<div>Results: ' + this.test_1_results + '</div>' +
+			'<div>Action Needed?:' + this.test_1_action_needed + '</div>' +
+			'<h4 style="margin-top: 10px;">Test 2</h4>' +
+			'<div>Date: ' + this.test_2_date + '</div>' +
+			'<div>Status: ' + this.test_2_status + '</div>' +
+			'<div>Results: ' + this.test_2_results + '</div>' +
+			'<div>Action Needed?:' + this.test_2_action_needed + '</div>';
+
 			//'<div>Start Date: ' + this.startDate + '</div>' +
 			//'<div>Category: ' + this.category + '</div>';
 

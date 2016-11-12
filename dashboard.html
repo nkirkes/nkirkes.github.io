@@ -29,21 +29,22 @@
           120WaterAudit
         </a>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
+      <div id="navbar" class="">
         <ul class="nav navbar-nav">
-          <li>
-            <a href="index.html">Maps</a>
-          </li>
           <li class="active">
-            <a href="dashboard.html">Dashboards</a>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="index.html">Logout</a>
           </li>
         </ul>
-        <form class="form-inline navbar-form navbar-right">
-          <div class="input-with-icon">
-            <input class="form-control" type="text" placeholder="Search...">
-            <span class="icon icon-magnifying-glass"></span>
-          </div>
-        </form>
+        <div class="nav navbar-right" style="padding: 10px; text-align: right;">
+          <strong>John Garrison</strong><br>
+          <span>Central Indiana Water Authority</span>
+        </div>
       </div>
     </div>
   </nav>
@@ -56,6 +57,10 @@
       </div>
 
       <div class="btn-toolbar dashhead-toolbar">
+        <div class="input-with-icon" style="margin-left: 10px;">
+          <input class="form-control" type="text" placeholder="Search...">
+          <span class="icon icon-magnifying-glass"></span>
+        </div>
         <div class="btn-toolbar-item input-with-icon">
           <input type="text" value="01/01/15 - 01/08/15" class="form-control" data-provide="datepicker">
           <span class="icon icon-calendar"></span>
@@ -65,20 +70,22 @@
 
     <!-- Content -->
     <div class="hr-divider m-t m-b-md">
-      <h3 class="hr-divider-content hr-divider-heading">Quick stats</h3>
+      <h3 class="hr-divider-content hr-divider-heading"></h3>
     </div>
 
     <div class="row ex-graphs text-center">
+      <div class="col-sm-2"></div>
       <div class="col-sm-4">
         <h3>Tests Returned vs. Goal</h3>
-        <strong class="text-muted">The total number of tests that are in the mail stream <br /> measured against our goal of
-        100 test returns.</strong>
-        <div class="c-w-lg m-x-auto" style="margin-top: 10px;">
+        <span class="text-muted">The total number of tests that are in the mail stream <br /> measured against our goal of
+        100 test returns.</span>
+        <div class="c-w-lg m-x-auto" style="width: 200px; height: 200px; margin-top: 10px; margin-bottom: 20px;">
           <canvas
             class="ex-graph"
             width="200" height="200"
             data-chart="doughnut"
             data-segment-stroke-color="#222"
+            data-percentage-inner-cutout="50"
             data-value="[{ value: 77, color: '#06379D', label: 'Outstanding' }, { value: 23, color: '#1EB6E0', label: 'Returned' }]">
           </canvas>
         </div>
@@ -86,55 +93,81 @@
       </div>
       <div class="col-sm-4">
         <h3>Tests Received at Lab</h3>
-        <strong class="text-muted">The total number of tests that have been received at ALS <br /> for testing measured against our goal of 100 test returns.</strong>
-        <div class="c-w-lg m-x-auto" style="margin-top: 10px;">
+        <span class="text-muted">The total number of tests that have been received at the lab <br /> for testing measured against our goal of 100 test returns.</span>
+        <div class="c-w-lg m-x-auto" style="width: 200px; height: 200px; margin-top: 10px; margin-bottom: 20px;">
           <canvas
             class="ex-graph"
             width="200" height="200"
             data-chart="doughnut"
             data-segment-stroke-color="#222"
+            data-percentage-inner-cutout="50"
             data-value="[{ value: 100, color: '#06379D', label: 'Outstanding Tests' }, { value: 0, color: '#1EB6E0', label: 'Tests at ALS' }]">
           </canvas>
         </div>
       </div>
+      <div class="col-sm-2"></div>
+    </div>
+
+    <div class="row ex-graphs text-center">
+      <div class="col-sm-2"></div>
       <div class="col-sm-4">
         <h3>Tests Returned vs. Total Sent</h3>
-        <strong class="text-muted">The total number of tests that have been returned <br /> measured against the total number of tests sent.</strong>
-        <div class="c-w-lg m-x-auto" style="margin-top: 10px;">
+        <span class="text-muted">The total number of tests that have been returned <br /> measured against the total number of tests sent.</span>
+        <div class="c-w-lg m-x-auto" style="width: 200px; height: 200px; margin-top: 10px; margin-bottom: 20px;">
           <canvas
             class="ex-graph"
             width="200" height="200"
             data-chart="doughnut"
             data-segment-stroke-color="#222"
+            data-percentage-inner-cutout="50"
             data-value="[{ value: 180, color: '#06379D', label: 'Total Outstanding Tests' }, { value: 23, color: '#1EB6E0', label: 'Tests Returned' }]">
           </canvas>
         </div>
       </div>
+      <div class="col-sm-4">
+        <h3>Average Lead Levels</h3>
+        <span class="text-muted">Need copy and data for x/y axis...<br/></span>
+        <div class="c-w-lg m-x-auto" style="width: 300px; height: 200px; margin-top: 10px; margin-bottom: 20px;">
+           <canvas
+            class="ex-line-graph"
+            width="200" height="200"
+            data-chart="line"
+            data-scale-line-color="transparent"
+            data-scale-grid-line-color="rgba(255,255,255,.05)"
+            data-scale-font-color="#a2a2a2"
+            data-labels="['','Aug 29','','','Sept 5','','','Sept 12','','','Sept 19','']"
+            data-value="[{fillColor: 'rgba(28,168,221,.03)', data: [2500, 3300, 2512, 2775, 2498, 3512, 2925, 4275, 3507, 3825, 3445, 3985]}]">
+          </canvas>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
     </div>
 
     <div class="hr-divider m-t-lg m-b-md">
-      <h3 class="hr-divider-content hr-divider-heading">Other</h3>
+      <h3 class="hr-divider-content hr-divider-heading"></h3>
     </div>
 
     <div class="row ex-graphs text-center">
       <h3>Customer Support Requests</h3>
-      <strong class="text-muted">The total number of customer support requests by type per week.</div>
+      <span class="text-muted">The total number of customer support requests by type.</span>
       <div class="ex-line-graphs">
         <canvas
           class="ex-line-graph"
           width="600" height="400"
           data-chart="bar"
+          data-scale-steps="5"
+          data-scale-step-width="5"
           data-scale-line-color="transparent"
           data-scale-grid-line-color="rgba(30, 182, 224, 1.00)"
           data-scale-font-color="#a2a2a2"
           data-labels="['Courier Requests','Collection Requests','Support Emails','Support Calls']"
-          data-value="[{ label: 'First dataset', data: [0, 0, 0, 8] }]">
+          data-value="[{ label: 'First dataset', data: [5, 3, 17, 22] }]">
         </canvas>
       </div>
     </div>
 
     <div class="hr-divider m-t m-b-md">
-      <h3 class="hr-divider-content hr-divider-heading">Info</h3>
+      <h3 class="hr-divider-content hr-divider-heading"></h3>
     </div>
     <div class="m-t-md" style="text-align: center">
       <a href="mailto:support@120WaterAudit.com">support@120WaterAudit.com</a> | 888.317.1510 | <a href="www.120WaterAudit.com" target="_blank">www.120WaterAudit.com</a>

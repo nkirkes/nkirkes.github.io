@@ -31,43 +31,51 @@
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-
-
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="active">
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="index.html">Logout</a>
+          </li>
+        </ul>
+        <div class="nav navbar-right" style="padding: 10px; text-align: right;">
+          <strong>John Garrison</strong><br>
+          <span>Central Indiana Water Authority</span>
+        </div>
       </div>
     </div>
   </nav>
 
   <div class="container-fluid container-fluid-spacious">
     <div class="dashhead m-t-md">
-      <!--<div class="dashhead-titles">
-        <h6 class="dashhead-subtitle"></h6>
-        <h2 class="dashhead-title">Login</h2>
+      <div class="dashhead-titles">
+        <h6 class="dashhead-subtitle">Maps</h6>
+        <h2 class="dashhead-title">Testing Status & Results</h2>
+        <button type="button" class="btn btn-xs btn-pill btn-primary">Requested</button>
+        <button type="button" class="btn btn-xs btn-pill btn-success">Uncontaminated</button>
+        <button type="button" class="btn btn-xs btn-pill btn-warning">Unsubmitted</button>
+        <button type="button" class="btn btn-xs btn-pill btn-danger">Contaminated</button>
       </div>
-      <form class="form-inline navbar-form navbar-right">
-        <div class="input-with-icon">
+
+      <div class="btn-toolbar dashhead-toolbar">
+        <div class="input-with-icon" style="margin-left: 10px;">
           <input class="form-control" type="text" placeholder="Search...">
           <span class="icon icon-magnifying-glass"></span>
         </div>
-      </form>-->
+        <div class="btn-toolbar-item input-with-icon">
+          <input type="text" value="01/01/15 - 01/08/15" class="form-control" data-provide="datepicker">
+          <span class="icon icon-calendar"></span>
+        </div>
+      </div>
     </div>
 
     <!-- Content -->
 
-    <div class="row text-center" style="margin-top: 100px; margin-bottom: 200px;">
-      <div class="col-md-4"></div>
-      <div class="col-md-3 text-sm-left">
-        <h2>Login</h2>
-        <form class="" action="dashboard.html">
-          <div class="input-with-icon">
-            Username: <input class="form-control" style="display: inline; margin-bottom: 20px;" type="text" placeholder="">
-            Password: <input class="form-control" style="display: inline; margin-bottom: 20px;" type="text" placeholder="">
-            <button type="button" class="btn btn-lg btn-pill btn-primary" onclick="javascript:window.location = '/dashboard.html';">Login</button>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-5"></div>
-    </div>
-
+      <div id="map" style="background-color: black; height: 600px; width: 100%;" class="dashhead m-t-md"></div>
       <div class="hr-divider m-t m-b-md">
         <h3 class="hr-divider-content hr-divider-heading"></h3>
       </div>
@@ -99,7 +107,6 @@
         window.onload = function() {
             app.init();
         }
-
     </script>
   </body>
 </html>
