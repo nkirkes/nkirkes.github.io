@@ -4231,7 +4231,7 @@ $(function () {
         scaleOverride: true,
         scaleSteps: 3,
         scaleStepWidth: 1000,
-        scaleStartValue: 2000,
+        scaleStartValue: 0,
         scaleLineColor: 'rgba(0,0,0,.05)',
         scaleGridLineColor: 'rgba(0,0,0,.05)',
         scaleFontColor: 'rgba(0,0,0,.4)',
