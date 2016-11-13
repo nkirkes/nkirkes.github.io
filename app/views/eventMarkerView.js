@@ -29,6 +29,7 @@ app.views.eventMarkerView = Backbone.View.extend({
 		        city: this.model.attributes.city,
 						state: this.model.attributes.state,
 						zip: this.model.attributes.zip,
+						phone: this.model.attributes.phone,
 						test_type: this.model.attributes.test_type,
 						test_category: this.model.attributes.test_category,
 						test_status: this.model.attributes.test_status,
@@ -48,11 +49,12 @@ app.views.eventMarkerView = Backbone.View.extend({
     showEventDetails: function() {
     	var infoContent = '<div id="content">' +
 			'<h3>' + this.customer_name + '</h3>' +
-			'<div><strong>' + this.address + '</strong><br/>' + this.city + ', ' + this.state + '' + this.zip + '</div>' +
-			'<div>Test Type 1: ' + this.test_type+ '</div>' +
+			'<div><strong>' + this.address + '</strong><br/>' + this.city + ', ' + this.state + ' ' + this.zip + '</div>' +
+			'<div>Phone:: ' + this.phone + '</div>' +
+			'<div>Test Type: ' + this.test_type+ '</div>' +
 			'<div>Test Category: ' + this.test_category + '</div>' +
 			'<div>Analysis: ' + this.analysis + ' ppb</div>' +
-			'<div>Results delivered to customer:' + this.results_delivered_date + '</div>';
+			'<div>Results delivered to customer: ' + this.results_delivered_date + '</div>';
 
 			infoContent += '</div>';
 

@@ -6,6 +6,7 @@ app.models.eventItem = Backbone.Model.extend({
 			city: '',
 			state: '',
 			zip: '',
+			phone: '',
 			test_type: '',
 			test_category: '',
 			test_status: '',
