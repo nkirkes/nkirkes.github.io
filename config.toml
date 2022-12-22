@@ -1,0 +1,4 @@
+baseURL = 'https://nkirkes.github.io'
+languageCode = 'en-us'
+title = 'Rowdy Cloud'
+theme = 'ananke'
