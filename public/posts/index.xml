@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rowdy Cloud</title>
-    <link>https://nkirkes.github.io/</link>
-    <description>Recent content on Rowdy Cloud</description>
+    <title>Posts on Rowdy Cloud</title>
+    <link>https://nkirkes.github.io/posts/</link>
+    <description>Recent content in Posts on Rowdy Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Dec 2022 15:02:09 -0500</lastBuildDate><atom:link href="https://nkirkes.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Dec 2022 15:02:09 -0500</lastBuildDate><atom:link href="https://nkirkes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://nkirkes.github.io/posts/my-first-post/</link>
