@@ -1,16 +1,19 @@
 ---
 title: "Welcome to 2023"
 date: 2023-01-03T13:46:30-05:00
+publishdate: 2023-01-03T13:46:30-05:00
 draft: true
+summary: 'Some quick-ish, personal anecdotes as we head into the new year and inspired by events at the end of 2022.'
+tags: [personal]
 ---
 
-#Oh, 2022...
+# Hindsight
 
-Hindsight has been my most outstanding teacher, and as was the case for so many people, 2022 provided no shortage of lessons. This past holiday season was particularly fruitful. Before I post more about the year ahead, I wanted to share some anecdotes I'm still processing. This may be more cathartic for me than anything. Still, I hope something positive is triggered for anyone who happens to read.
+Hindsight has been my most outstanding teacher, and as was the case for so many people, 2022 provided no shortage of lessons. This past holiday season was particularly fruitful. To kick off my writing journey for the year, I wanted to start with some personal reminders. Most of my writing will be tech or business-focused. This first offering of the year may be more cathartic for me than anything. Still, someone may need a gentle nudge in the same direction, and I hope this helps.
 
 **Remember the basics.**
 
-A few days before Christmas, I was finishing up a minor remodel to our 1/2 bathroom. New paint, some new fixtures, nothing crazy. I had pulled out the sink to paint behind it correctly. As I was installing a new light fixture - a relatively simple task - I dropped my screwdriver, which perfectly hit one of the water lines from the wall. I mean, this was a 3/4" pipe, tiny. Dumb luck. The 30-year-old peanut brittle of a plastic pipe burst open as the valve hit the ground, filling the bathroom with at least an inch of water within a few moments. And here is a lesson about basics: Do you happen to know where your water shutoff is or how to shut the water off from your curb (if you're in a house)? Yep. I didn't. We've been here for a year, and other priorities distracted me from learning the home (*thanks, Netflix*). I'll keep the story short, but looking back, I should have known where the in-home shutoff was (it's in my coat closet, underneath a ton of other stuff, if you must know). Remember the basics. It applies to everything. 
+A few days before Christmas, I was finishing up a minor remodel to our 1/2 bathroom. New paint, some new fixtures, nothing crazy. I had pulled out the sink to paint behind it correctly. As I was installing a new light fixture - a relatively simple task - I dropped my screwdriver, which perfectly hit one of the water lines from the wall. I mean, this was a 3/4" pipe, tiny. Dumb luck. The 30-year-old peanut brittle of a plastic pipe burst open as the valve hit the ground, filling the bathroom with at least an inch of water within a few moments. And here is a lesson about basics: Do you happen to know where your water shutoff is or how to shut the water off from your curb (if you're in a house)? Yep. I didn't. We've been here for a year, and other priorities distracted me from learning the home (*thanks, Netflix*). I'll keep the story short, but looking back, I should have known where the in-home shutoff was (it's in my coat closet, underneath a ton of other stuff, if you must know). Remember the basics. This applies to everything you do.
 
 **Make (more) time for your family, especially if you're distant.**
 
@@ -22,6 +25,6 @@ To cap the holiday week, my wife and I were driving with our son on the intersta
 
 Again trying to keep a long story from being too long, I had a 200m walk back to my truck to process what I saw and why. In that short walk, my life's blessings moved to the forefront. My first-world complaints became minuscule, sickening even. But the lesson? How many people in my life are at their wit's end, hiding in plain sight? Can I be more available and more helpful? Can I be a refuge for them, and if so, how? What are the warning signs of someone considering suicide? Huge, HUGE topic to digest, and undoubtedly more significant than I can manage in a weekend. 
 
-Events like these are nothing new; at 45, I've seen enough in my life to "know" these things already. Compressed into a week, I'm reminded how quickly life's noise can drown out the most important things. These events are reshaping how I'm approaching 2023.
+Events like these are nothing new; at 45, I've seen enough in my life to "know" these things already. Compressed into a week, I'm reminded how quickly life's noise can drown out the most important things. These events are reshaping how I'm approaching 2023 and accentuating my appreciation for my health, family, friends, and the relative safety and security in which I live.
 
 *Much love to all this new year, and thank you for reading!*
