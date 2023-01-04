@@ -7,7 +7,7 @@ summary: 'Some quick-ish, personal anecdotes as we head into the new year and in
 tags: [personal]
 ---
 
-Hindsight has been my most consistent teacher, and 2022 provided no shortage of opportunities to look backwards and learn (or remember) something. This past holiday season was particularly fruitful. To kick off my writing journey for the year, I wanted to start with some personal reminders. Most of my writing will be tech or business-focused. This first offering of the year may be more cathartic for me than anything. Still, someone may need a gentle nudge in the same direction, and I hope this helps.
+Hindsight has been my most consistent teacher, and 2022 provided no shortage of opportunities to look backwards and learn (or remember) something. This past holiday season was particularly fruitful. To kick off my writing journey for the year, I wanted to start with some personal anecdotes inspired by recent events. Most of my writing will be tech or business-focused, so this first offering of the year may be a little abnormal. Cathartic perhaps. I figure someone may need a gentle nudge in the same direction, and I hope this helps.
 
 **Remember the basics.**
 
