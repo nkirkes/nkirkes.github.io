@@ -1,13 +1,11 @@
 ---
-title: "Welcome to 2023"
+title: "Hindsight"
 date: 2023-01-03T13:46:30-05:00
 publishdate: 2023-01-03T13:46:30-05:00
 draft: false
 summary: 'Some quick-ish, personal anecdotes as we head into the new year and inspired by events at the end of 2022.'
 tags: [personal]
 ---
-
-# Hindsight
 
 Hindsight has been my most consistent teacher, and 2022 provided no shortage of opportunities to look backwards and learn (or remember) something. This past holiday season was particularly fruitful. To kick off my writing journey for the year, I wanted to start with some personal reminders. Most of my writing will be tech or business-focused. This first offering of the year may be more cathartic for me than anything. Still, someone may need a gentle nudge in the same direction, and I hope this helps.
 
