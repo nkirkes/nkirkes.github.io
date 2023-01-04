@@ -9,7 +9,7 @@ tags: [personal]
 
 # Hindsight
 
-Hindsight has been my most outstanding teacher, and as was the case for so many people, 2022 provided no shortage of lessons. This past holiday season was particularly fruitful. To kick off my writing journey for the year, I wanted to start with some personal reminders. Most of my writing will be tech or business-focused. This first offering of the year may be more cathartic for me than anything. Still, someone may need a gentle nudge in the same direction, and I hope this helps.
+Hindsight has been my most consistent teacher, and 2022 provided no shortage of opportunities to look backwards and learn (or remember) something. This past holiday season was particularly fruitful. To kick off my writing journey for the year, I wanted to start with some personal reminders. Most of my writing will be tech or business-focused. This first offering of the year may be more cathartic for me than anything. Still, someone may need a gentle nudge in the same direction, and I hope this helps.
 
 **Remember the basics.**
 
