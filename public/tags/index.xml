@@ -8,6 +8,16 @@
       <url>https://nkirkes.github.io/silicorn.png</url>
       <link>https://nkirkes.github.io/silicorn.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://nkirkes.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 03 Jan 2023 13:46:30 -0500</lastBuildDate><atom:link href="https://nkirkes.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>personal</title>
+      <link>https://nkirkes.github.io/tags/personal/</link>
+      <pubDate>Tue, 03 Jan 2023 13:46:30 -0500</pubDate>
+      
+      <guid>https://nkirkes.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

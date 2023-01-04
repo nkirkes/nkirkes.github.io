@@ -2,7 +2,7 @@
 title: "Welcome to 2023"
 date: 2023-01-03T13:46:30-05:00
 publishdate: 2023-01-03T13:46:30-05:00
-draft: true
+draft: false
 summary: 'Some quick-ish, personal anecdotes as we head into the new year and inspired by events at the end of 2022.'
 tags: [personal]
 ---
